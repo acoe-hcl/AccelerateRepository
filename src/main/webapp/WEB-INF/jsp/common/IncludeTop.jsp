@@ -1,6 +1,6 @@
 <%--
 
-       Copyright 2010-2019 the original author or authors.
+       Copyright 2010-2016 the original author or authors.
 
        Licensed under the Apache License, Version 2.0 (the "License");
        you may not use this file except in compliance with the License.
@@ -124,12 +124,8 @@
 	event="viewCategory">
 	<stripes:param name="categoryId" value="BIRDS" />
 	<img src="../images/sm_birds.gif" />
-</stripes:link>
+</stripes:link></div>
 
 </div>
 
-</div>
-<body>
-	<div><c:out value = "${message}" /></div>
-</body>
 <div id="Content"><stripes:messages />

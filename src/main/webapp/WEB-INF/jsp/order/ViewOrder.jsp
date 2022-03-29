@@ -152,15 +152,15 @@
 					</c:if></td>
 
 					<td>${lineItem.quantity}</td>
-					<td><fmt:formatNumber value="${lineItem.unitPrice}"
-						pattern="$#,##0.00" /></td>
-					<td><fmt:formatNumber value="${lineItem.total}"
-						pattern="$#,##0.00" /></td>
+					<td>$<fmt:formatNumber value="${lineItem.unitPrice}"
+						pattern="#,##0.00" /></td>
+					<td>$<fmt:formatNumber value="${lineItem.total}"
+						pattern="#,##0.00" /></td>
 				</tr>
 			</c:forEach>
 			<tr>
-				<th colspan="5">Total: <fmt:formatNumber
-					value="${actionBean.order.totalPrice}" pattern="$#,##0.00" /></th>
+				<th colspan="5">Total: $<fmt:formatNumber
+					value="${actionBean.order.totalPrice}" pattern="#,##0.00" /></th>
 			</tr>
 		</table>
 		</td>

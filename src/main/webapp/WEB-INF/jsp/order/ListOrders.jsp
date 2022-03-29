@@ -36,8 +36,8 @@
 			  </stripes:link></td>
 			<td><fmt:formatDate value="${order.orderDate}"
 				pattern="yyyy/MM/dd hh:mm:ss" /></td>
-			<td><fmt:formatNumber value="${order.totalPrice}"
-				pattern="$#,##0.00" /></td>
+			<td>$<fmt:formatNumber value="${order.totalPrice}"
+				pattern="#,##0.00" /></td>
 		</tr>
 	</c:forEach>
 </table>
